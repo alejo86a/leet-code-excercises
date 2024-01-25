@@ -8,8 +8,7 @@ function validMountainArray(arr) {
     var max_ind = 0
     var growing = true
     
-    for(let i = 1; i < arr.length; i++){
-        
+    for(let i = 1; i < arr.length; i++){        
         if(growing && arr[i] > arr[max_ind]){
             max_ind = i
             if(arr[i-1] > arr[i] || max_ind + 1 === arr.length) return false
@@ -20,4 +19,4 @@ function validMountainArray(arr) {
         }
     }
     return true
-}
+};
