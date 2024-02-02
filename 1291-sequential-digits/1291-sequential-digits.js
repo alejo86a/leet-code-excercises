@@ -5,8 +5,6 @@
  */
 var sequentialDigits = function(low, high) {
     const result = [];
-    low = parseInt(low);
-    high = parseInt(high);
 
     for (let i = 1; i <= 9; i++) {
         let num = i;
