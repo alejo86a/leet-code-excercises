@@ -11,5 +11,5 @@ var frequencySort = function(s) {
             arrMap.set(s[i],1)
         }
     }
-    return Array.from(arrMap).sort((a,b)=>b[1]-a[1]).map(x=>(new Array(x[1])).fill(x[0]).join('')).join('');
+    return Array.from(arrMap).sort((a,b)=>b[1]-a[1]).map(x=>x[0].repeat(x[1])).join('');
 };
