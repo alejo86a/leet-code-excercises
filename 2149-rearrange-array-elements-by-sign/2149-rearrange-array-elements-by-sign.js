@@ -14,7 +14,7 @@ var rearrangeArray = function(nums) {
 
     for(let i =0,j=0;i<nums.length/2;i++,j++){
         res.push(pos[i]);
-        res.push(neg[j]);
+        res.push(neg[i]);
     }
     return res;
 };
