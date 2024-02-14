@@ -12,7 +12,7 @@ var rearrangeArray = function(nums) {
         }
      }
 
-    for(let i =0,j=0;i<nums.length/2;i++,j++){
+    for(let i =0;i<nums.length/2;i++){
         res.push(pos[i]);
         res.push(neg[i]);
     }
