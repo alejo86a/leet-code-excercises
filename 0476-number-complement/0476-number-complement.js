@@ -8,6 +8,5 @@ var findComplement = function(num) {
         result.unshift(num%2)
         num = Math.floor(num/2)
     }
-    console.log(result)
     return result.reduce((acc,x,i)=>acc+((x+1)%2)*(2**(result.length-i-1)),0)
 };
