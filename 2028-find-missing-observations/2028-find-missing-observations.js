@@ -13,7 +13,6 @@ var missingRolls = function(rolls, mean, n) {
     if(falta<n || falta > 6*n){
         return []
     }
-    console.log(falta)
     
     const base = Math.floor(falta/n);
     const sobra = falta%n;
