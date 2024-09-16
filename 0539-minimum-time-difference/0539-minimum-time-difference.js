@@ -14,8 +14,6 @@ var findMinDifference = function(timePoints) {
         }else{
             diff.push(Math.abs(t-timesF[(i-1)]))            
         }
-        diff.push(Math.abs(t-timesF[(i-1)<0?timesF.length-1:i-1]))
-        diff.push(Math.abs(t-timesF[(i+1)%timesF.length]))
     })
     return diff.sort((a,b)=>a-b)[0];
 };
