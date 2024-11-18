@@ -8,13 +8,8 @@ var decrypt = function(code, k) {
     return code.map((e,i)=>{
         let acc= 0;
         for(let j=1;j<=Math.abs(k);j++){
-            if(k>0){
-                const pos = (i+j)%(code.length);
-                acc+=code[pos];
-            }else{
-                let pos = (i - j + code.length) % code.length;
-                acc+=code[pos];
-            }            
+            const pos = (k>0)?(i+j)%(code.length):(i - j + code.length) % code.length;
+            acc+=code[pos];
         }
         return acc;
     });
